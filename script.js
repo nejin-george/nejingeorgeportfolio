@@ -10,10 +10,41 @@ function updateScrollProgress() {
 window.addEventListener("scroll", updateScrollProgress, { passive: true });
 updateScrollProgress();
 
+
 menuButton.addEventListener("click", () => {
   const isOpen = nav.classList.toggle("open");
   menuButton.setAttribute("aria-expanded", String(isOpen));
 });
+
+nav.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", function (event) {
+    const href = this.getAttribute("href");
+
+    if (!href || href === "#") return;
+
+    const target = document.getElementById(href.substring(1));
+
+    if (!target) {
+      console.error("Navigation target not found:", href);
+      return;
+    }
+
+    event.preventDefault();
+
+    // Update the URL and scroll to the selected section.
+    history.replaceState(null, "", href);
+
+    target.scrollIntoView({
+      behavior: "auto",
+      block: "start"
+    });
+
+    // Close the menu after starting navigation.
+    nav.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
+  });
+});
+
 nav.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", function (event) {
     const targetId = this.getAttribute("href");

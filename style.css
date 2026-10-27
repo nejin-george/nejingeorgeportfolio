@@ -212,4 +212,28 @@ footer {
     padding: 17px;
   }
 }
+@media (max-width: 800px) {
+  .site-header {
+    z-index: 1000;
+  }
+
+  .nav.open {
+    z-index: 1001;
+    pointer-events: auto;
+  }
+
+  .nav.open a {
+    display: inline-block;
+    position: relative;
+    z-index: 1002;
+    pointer-events: auto;
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+
+  #flowing-bg,
+  .noise {
+    pointer-events: none !important;
+  }
+}
 

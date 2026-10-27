@@ -237,3 +237,11 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  body:has(.nav.open) .curiosity,
+  body:has(.nav.open) .curiosity-label {
+    display: none !important;
+  }
+}
+
+

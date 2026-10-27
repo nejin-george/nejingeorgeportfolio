@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="Nejin George — Electrical and Electronics Engineering student, project builder, and technology enthusiast.">
+  <title>Nejin George — Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>  
+<canvas id="flowing-bg" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Nejin George home"><span class="brand-mark">N<span>G</span></span><span>NEJIN GEORGE<span class="brand-sub">ENGINEERING PORTFOLIO</span></span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact" class="nav-contact">Let's connect <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="status-dot"></span> EEE STUDENT · BUILDER · CURIOUS BY DESIGN</p>
+          <h1 class="reveal">Turning ideas<br>into <span class="gradient-text">real-world</span><br>engineering.</h1>
+          <p class="hero-intro reveal">I'm <strong>Nejin George</strong>, an Electrical and Electronics Engineering student interested in the space where electrical systems, embedded electronics, and practical problem-solving meet.</p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
+            <a class="button button-quiet" href="#contact">Get in touch <span>↗</span></a>
+          </div>
+          <div class="hero-meta reveal"><span>BASED IN KERALA, INDIA</span><span class="meta-line"></span><span>OPEN TO LEARNING & OPPORTUNITIES</span></div>
+        </div>
+        <div class="hero-art reveal" aria-label="Abstract electrical circuit illustration">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-orbit orbit-three"></div>
+          <div class="art-core"><span class="core-symbol">N<span>G</span></span><span class="core-caption">IDEAS IN MOTION</span></div>
+          <span class="float-label label-side">CURIOSITY / 001</span>
+          <span class="art-cross cross-one">+</span><span class="art-cross cross-two">+</span>
+          <div class="signal signal-a"></div><div class="signal signal-b"></div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue"><span class="scroll-mouse"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section-wrap about-section" id="about">
+      <div class="section-heading reveal"><p class="eyebrow">01 / A LITTLE ABOUT ME</p><h2>Engineer in progress.<br><span class="muted">Always building.</span></h2></div>
+      <div class="about-layout">
+        <div class="about-note reveal"><p class="large-copy">I like understanding how things work — then finding ways to make them work better.</p><p>My journey in EEE has introduced me to power systems, electrical machines, electronics, microcontrollers, and the possibilities of combining hardware with software. I enjoy hands-on projects that turn classroom concepts into something tangible.</p><p>This portfolio is a living record of what I'm learning, building, and exploring next.</p></div>
+        <div class="about-facts reveal">
+          <div class="fact"><span class="fact-number">01</span><div><h3>Think practically</h3><p>Connect theory to real systems and useful applications.</p></div></div>
+          <div class="fact"><span class="fact-number">02</span><div><h3>Build and test</h3><p>Learn by experimenting, debugging, and iterating.</p></div></div>
+          <div class="fact"><span class="fact-number">03</span><div><h3>Keep exploring</h3><p>Stay curious across electrical, electronic, and digital technologies.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <div class="section-wrap">
+        <div class="section-heading section-heading-row reveal"><div><p class="eyebrow">02 / SELECTED WORK</p><h2>Projects with<br><span class="muted">a purpose.</span></h2></div><p class="heading-side">A selection of projects and concepts from my engineering journey. Each one is an opportunity to learn by doing.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-featured reveal"><div class="project-top"><span class="project-index">PROJECT / 001</span><span class="project-arrow">↗</span></div><div class="project-visual visual-frequency"><div class="wave wave-one"></div><div class="wave wave-two"></div><div class="wave wave-three"></div><span class="visual-label">SIGNAL // CAPTURE // TRANSMIT</span><div class="frequency-readout"><small>INPUT FREQUENCY</small><strong>2.00 <em>kHz</em></strong><span class="readout-status"><i></i> SIGNAL DETECTED</span></div></div><div class="project-info"><p class="project-type">EMBEDDED SYSTEMS · WIRELESS</p><h3>Wireless Frequency Meter</h3><p>Arduino-based frequency measurement concept using signal capture and 433 MHz RF modules to send readings to a remote receiver.</p><div class="tag-list"><span>Arduino Uno</span><span>Timer Capture</span><span>433 MHz RF</span></div></div></article>
+          <article class="project-card reveal"><div class="project-top"><span class="project-index">PROJECT / 002</span><span class="project-arrow">↗</span></div><div class="project-visual visual-solar"><div class="sun"></div><div class="solar-panel"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="visual-label">DATA → FORECAST → INSIGHT</span></div><div class="project-info"><p class="project-type">MACHINE LEARNING · ENERGY</p><h3>Solar Power Forecasting</h3><p>A project concept exploring how historical and environmental data can support solar power generation forecasting using MATLAB and spreadsheet workflows.</p><div class="tag-list"><span>MATLAB</span><span>Data Analysis</span><span>Renewables</span></div></div></article>
+          <article class="project-card reveal"><div class="project-top"><span class="project-index">PROJECT / 003</span><span class="project-arrow">↗</span></div><div class="project-visual visual-hall"><div class="magnet magnet-left">N</div><div class="magnet magnet-right">S</div><div class="sensor-line"></div><div class="sensor-chip">HALL<br>SENSOR</div><span class="visual-label">FIELD DETECTION / SENSOR SYSTEM</span></div><div class="project-info"><p class="project-type">SENSORS · ELECTRONICS</p><h3>Magnetic Field Detection</h3><p>Exploration of Hall-effect sensors for detecting magnetic fields and interpreting sensor output in a microcontroller-based setup.</p><div class="tag-list"><span>Hall Sensors</span><span>Arduino</span><span>Signal Reading</span></div></div></article>
+          <article class="project-card reveal"><div class="project-top"><span class="project-index">PROJECT / 004</span><span class="project-arrow">↗</span></div><div class="project-visual visual-iot"><div class="iot-node node-a">SENSOR</div><div class="iot-node node-b">CONTROL</div><div class="iot-node node-c">CLOUD</div><div class="iot-connect connect-a"></div><div class="iot-connect connect-b"></div><span class="visual-label">MONITORING · AUTOMATION · INSIGHT</span></div><div class="project-info"><p class="project-type">IOT · SYSTEM DESIGN</p><h3>Smart Monitoring Concepts</h3><p>Exploring sensor-based monitoring and connected systems, including an IoT smart-helmet concept and environmental monitoring applications.</p><div class="tag-list"><span>IoT Concepts</span><span>Sensors</span><span>System Design</span></div></div></article>
+
+          <article class="project-card reveal"><div class="project-top"><span class="project-index">PROJECT / 005</span><span class="project-arrow">↗</span></div><div class="project-visual visual-water"><div class="water-tank"><span></span><span></span><span></span><i></i></div><div class="water-sensor sensor-one">pH</div><div class="water-sensor sensor-two">LEVEL</div><div class="water-pulse"></div><span class="visual-label">SENSE · MONITOR · ALERT</span></div><div class="project-info"><p class="project-type">FUNDED PROJECT · MONITORING</p><h3>Sewage Treatment Plant Monitoring</h3><p>A funded project focused on monitoring key sewage-treatment plant parameters and helping operators identify abnormal conditions through sensor-based monitoring and alerts.</p><div class="tag-list"><span>Sensor Systems</span><span>Monitoring</span><span>Environmental Tech</span></div></div></article>
+          <article class="project-card reveal"><div class="project-top"><span class="project-index">PROJECT / 006</span><span class="project-arrow">↗</span></div><div class="project-visual visual-driver"><div class="driver-road"><i></i><i></i><i></i></div><div class="driver-car"><span></span></div><div class="driver-eye">◉</div><div class="driver-alert">ATTENTION CHECK <b>ACTIVE</b></div><span class="visual-label">DRIVER SAFETY · LANE ASSIST</span></div><div class="project-info"><p class="project-type">AUTOMOTIVE SAFETY · ASSISTIVE SYSTEMS</p><h3>Driver Anti-Sleep Detection & Lane Assist</h3><p>A driver-safety system concept combining drowsiness detection with lane-assistance alerts to help warn drivers when attention drops or unintended lane departure is detected.</p><div class="tag-list"><span>Driver Monitoring</span><span>Computer Vision*</span><span>Safety Alerts</span></div></div></article>
+          <article class="project-card reveal"><div class="project-top"><span class="project-index">PROJECT / 007</span><span class="project-arrow">↗</span></div><div class="project-visual visual-rover"><div class="rover-terrain"></div><div class="rover-path"></div><div class="rover-body"><span class="rover-wheel wheel-a"></span><span class="rover-wheel wheel-b"></span><span class="rover-wheel wheel-c"></span><span class="rover-wheel wheel-d"></span><div class="rover-sensor"></div></div><div class="rover-signal">SOS <i></i></div><span class="visual-label">SEARCH · LOCATE · SUPPORT RESCUE</span></div><div class="project-info"><p class="project-type">SMART INDIA HACKATHON · RESCUE TECHNOLOGY</p><h3>Landslide Rescue Rover</h3><p>A Smart India Hackathon project concept for a rover designed to support landslide response by navigating difficult terrain and helping rescuers inspect hazardous areas and locate possible survivors.</p><div class="tag-list"><span>Rover Design</span><span>Rescue Support</span><span>Robotics</span></div></div></article>
+        </div>
+        <p class="project-disclaimer reveal">Project descriptions are starting points. Update each card with your exact implementation, results, photos, and repository links before presenting it as completed work.</p>
+      </div>
+    </section>
+
+    <section class="section-wrap experience-section" id="experience">
+      <div class="section-heading reveal"><p class="eyebrow">03 / FIELD EXPERIENCE</p><h2>Learning beyond<br><span class="muted">the classroom.</span></h2></div>
+      <div class="experience-card reveal"><div class="experience-date"><span>INDUSTRIAL TRAINING</span><strong>07 DAYS</strong><span>PALAKKAD, KERALA</span></div><div class="experience-content"><p class="project-type">POWER TRANSMISSION & DISTRIBUTION</p><h3>220 kV Substation — Kanjikode</h3><p>Industrial training focused on observing high-voltage substation infrastructure and understanding the role of major equipment in power transmission and distribution.</p><ul class="experience-list"><li>Observed 220 kV and 110 kV switchyard arrangements and feeder connections.</li><li>Learned about power transformers, cooling fins, conservator tanks, and breather systems.</li><li>Explored the 110 kV / 22 kV transformation stage and substation equipment functions.</li></ul><span class="experience-footnote">Add your training dates, certificate, and any approved photos here.</span></div></div>
+      <div class="education-row reveal"><div><p class="eyebrow">EDUCATION</p><h3>B.Tech — Electrical & Electronics Engineering</h3><p>Amal Jyothi College of Engineering · Kerala</p></div><div class="education-badge">UNDERGRADUATE<br><strong>EEE</strong></div></div>
+    </section>
+
+    <section class="skills-section" id="skills"><div class="section-wrap"><div class="section-heading section-heading-row reveal"><div><p class="eyebrow">04 / TOOLKIT</p><h2>Skills I'm<br><span class="muted">developing.</span></h2></div><p class="heading-side">A growing toolkit shaped by coursework, labs, projects, and self-directed learning.</p></div><div class="skills-layout"><div class="skill-group reveal"><span class="skill-number">01</span><h3>Electrical</h3><div class="skill-pills"><span>Electrical Machines</span><span>Power Systems</span><span>Power Grid Analyst</span><span>Transformers, Motors, Generators</span><span>Advanced Circuit Analysis</span></div></div><div class="skill-group reveal"><span class="skill-number">02</span><h3>Electronics & Embedded</h3><div class="skill-pills"><span>Arduino</span><span>Electronic Circuit Designs Using Kicad And Proteus</span><span>Analog Electronics</span><span>Sensors</span><span>RF Modules</span><span>Microcontroller And Microprocessor </span><span>Embedded C Programming </span><span>Digital Logic</span></div></div><div class="skill-group reveal"><span class="skill-number">03</span><h3>Software & Tools</h3><div class="skill-pills"><span>MATLAB</span><span>Python / pandas</span><span>C and C++</span><span>HTML & CSS</span><span>JavaScript</span><span>VHDL</span><span>Arduino IDE</span><span>Fusion 360(3D Printing)</span><span>AutoCAD</span></div></div></div><p class="project-disclaimer reveal">Keep only the skills you can discuss confidently. Add proficiency levels or evidence only where you can support them.</p></div></section>
+
+    
+<section class="section-wrap credentials-section" id="credentials">
+  <div class="section-heading reveal">
+    <p class="eyebrow">05 / CREDENTIALS</p>
+    <h2>Learning, documented.</h2>
+    <p class="section-description">
+      Workshops, internships, technical events and achievements.
+    </p>
+  </div>
+
+  <div class="certificate-grid">
+
+    <!-- 1 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>3D Printing Workshop</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">WORKSHOP</p>
+        <h3>3D Printing Workshop</h3>
+        <a class="certificate-link" href="certificates/3d-printing-workshop.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 2 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>Agnirva AI Online Internship</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">INTERNSHIP</p>
+        <h3>Agnirva AI Online Internship</h3>
+        <a class="certificate-link" href="certificates/agnirva-ai-online-internship.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 3 -->
+    <article class="certificate-card reveal">
+      <a class="certificate-preview" href="certificates/ieee-pes-event.png" target="_blank">
+        <img src="certificates/ieee-pes-event.png" alt="IEEE PES Event certificate">
+      </a>
+      <div class="certificate-info">
+        <p class="project-type">IEEE EVENT</p>
+        <h3>IEEE PES Event</h3>
+        <a class="certificate-link" href="certificates/ieee-pes-event.png" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 4 -->
+    <article class="certificate-card reveal">
+      <a class="certificate-preview" href="certificates/ieee-skyborn-robotics.jpg" target="_blank">
+        <img src="certificates/ieee-skyborn-robotics.jpg" alt="IEEE Skyborn Robotics certificate">
+      </a>
+      <div class="certificate-info">
+        <p class="project-type">ROBOTICS</p>
+        <h3>IEEE Skyborn Robotics</h3>
+        <a class="certificate-link" href="certificates/ieee-skyborn-robotics.jpg" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 5 -->
+    <article class="certificate-card reveal">
+      <a class="certificate-preview" href="certificates/nasa-space-apps-challenge.jpg" target="_blank">
+        <img src="certificates/nasa-space-apps-challenge.jpg" alt="NASA Space Apps Challenge certificate">
+      </a>
+      <div class="certificate-info">
+        <p class="project-type">SPACE & INNOVATION</p>
+        <h3>NASA Space Apps Challenge</h3>
+        <a class="certificate-link" href="certificates/nasa-space-apps-challenge.jpg" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 6 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>WSSET Certificate</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">CERTIFICATE</p>
+        <h3>WSSET Certificate</h3>
+        <a class="certificate-link" href="certificates/wsset-certificate.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 7 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>National Conference</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">CONFERENCE</p>
+        <h3>National Conference</h3>
+        <a class="certificate-link" href="certificates/national-conference.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 8 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>KSEB Internship</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">INDUSTRIAL TRAINING</p>
+        <h3>KSEB Internship</h3>
+        <a class="certificate-link" href="certificates/kseb-internship.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 9 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>OSHA</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">SAFETY TRAINING</p>
+        <h3>OSHA</h3>
+        <a class="certificate-link" href="certificates/osha.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 10 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>Drawing Club</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">EXTRACURRICULAR</p>
+        <h3>Drawing Club</h3>
+        <a class="certificate-link" href="certificates/drawing-club.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 11 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>SIH Shortlisted</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">SMART INDIA HACKATHON</p>
+        <h3>SIH Shortlisted</h3>
+        <a class="certificate-link" href="certificates/sih-shortlisted.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 12 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>SIH Participation</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">SMART INDIA HACKATHON</p>
+        <h3>SIH Participation</h3>
+        <a class="certificate-link" href="certificates/sih-participation.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 13 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>NASA 2025</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">SPACE & INNOVATION</p>
+        <h3>NASA 2025</h3>
+        <a class="certificate-link" href="certificates/nasa-2025.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 14 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>Google Solution Challenge</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">INNOVATION CHALLENGE</p>
+        <h3>Google Solution Challenge</h3>
+        <a class="certificate-link" href="certificates/google-solution-challenge.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 15 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>PCB Designing & Fabrication</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">ELECTRONICS WORKSHOP</p>
+        <h3>Workshop on PCB Designing and Fabrication</h3>
+        <a class="certificate-link" href="certificates/workshop-pcb-designing-and-fabrication.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 16 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>ESG & Sustainable Technology</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">SUSTAINABILITY</p>
+        <h3>ESG Processes With Sustainable Technology</h3>
+        <a class="certificate-link" href="certificates/esg-processes-with-sustainable-technology.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 17 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>Cybersecurity Analyst</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">JOB SIMULATION</p>
+        <h3>Cybersecurity Analyst Job Simulation</h3>
+        <a class="certificate-link" href="certificates/cybersecurity-analyst-job-simulation.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 18 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>Arduino Master Class</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">EMBEDDED SYSTEMS</p>
+        <h3>Arduino Master Class</h3>
+        <a class="certificate-link" href="certificates/arduino-master-class.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 19 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>Azure 2025 Volunteering</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">VOLUNTEERING</p>
+        <h3>Azure 2025 Volunteering</h3>
+        <a class="certificate-link" href="certificates/azure-2025-volunteering.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 20 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>Python Programming</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">PROGRAMMING</p>
+        <h3>Introduction to Python Programming</h3>
+        <a class="certificate-link" href="certificates/introduction-to-python-programming.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+    <!-- 21 -->
+    <article class="certificate-card reveal">
+      <div class="certificate-preview">
+        <span class="pdf-icon">PDF</span>
+        <strong>Mastermind</strong>
+      </div>
+      <div class="certificate-info">
+        <p class="project-type">ACHIEVEMENT</p>
+        <h3>Mastermind</h3>
+        <a class="certificate-link" href="certificates/mastermind.pdf" target="_blank">View Certificate ↗</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+    <section class="contact-section" id="contact"><div class="section-wrap contact-wrap"><div class="section-heading reveal"><p class="eyebrow">06 / YOUR NEXT IDEA STARTS HERE</p><h2>Let's make<br><span class="gradient-text">something matter.</span></h2><p class="section-description">Interested in engineering, collaborative projects, internships, or sharing ideas? Feel free to reach out.</p></div><div class="contact-actions reveal"><a class="button button-primary" href="mailto:nejingeorge@gmail.com">Email me <span>↗</span></a><a class="social-link" href="https://www.linkedin.com/in/nejin-george-b4b539326?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a><a class="social-link" href="https://github.com/nejin-george" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a class="social-link" href="assets/Nejin_George_Resume.pdf" target="_blank" rel="noreferrer">Résumé PDF <span>↓</span></a><a class="social-link" href="tel:+918589882506">
+  Call me <span>↗</span>
+</a>
+
+<a class="social-link"
+   href="https://www.instagram.com/nejin._.george?dlrf=YWlmanRyOGQ3Mmdj"
+   target="_blank"
+   rel="noopener noreferrer">
+  Instagram <span>↗</span>
+</a></div><div class="contact-bottom reveal"><span>NEJIN GEORGE © <span id="year"></span></span><span>DESIGNED WITH CURIOSITY <span class="heart">✳</span></span><a href="#home">BACK TO TOP ↑</a></div></div></section>
+  </main>
+
+<script src="https://cdn.jsdelivr.net/npm/webgl-fluid@0.4.0/dist/webgl-fluid.umd.min.js"></script>
+<script>
+  const fluidCanvas = document.getElementById("fluid-canvas");
+
+  if (typeof WebGLFluid === "function") {
+    WebGLFluid(fluidCanvas, {
+      TRIGGER: "hover",
+      SIM_RESOLUTION: 128,
+      DYE_RESOLUTION: 768,
+      DENSITY_DISSIPATION: 0.97,
+      VELOCITY_DISSIPATION: 0.98,
+      PRESSURE: 0.8,
+      PRESSURE_ITERATIONS: 20,
+      CURL: 25,
+      SPLAT_RADIUS: 0.22,
+      SPLAT_FORCE: 4000,
+      SHADING: true,
+      COLORFUL: true,
+      COLOR_UPDATE_SPEED: 8,
+      TRANSPARENT: true,
+      BLOOM: true,
+      BLOOM_INTENSITY: 0.65,
+      SUNRAYS: false,
+      AUTO: false,
+      IMMEDIATE: false
+    });
+  }
+</script>
+</body>
+</html>
+
+</body>
+</html>

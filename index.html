@@ -10,6 +10,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Compact certificate cards: hide PDF icons, broken images, and preview area. */
+    .certificate-grid .certificate-preview,
+    .certificate-grid .pdf-icon {
+      display: none !important;
+    }
+
+    .certificate-grid .certificate-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+      height: auto;
+    }
+
+    .certificate-grid .certificate-info {
+      flex: 1 1 auto;
+    }
+  </style>
   <script src="script.js" defer></script>
 </head>
 <body>  
